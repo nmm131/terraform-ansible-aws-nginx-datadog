@@ -54,6 +54,16 @@
 	2. Check whether the execution plan for the set of changes matches your expectations:
 		1. If the planned changes are acceptable, type `yes` on the line given to you
 
+### Ansible Configuration
+1. Add the output ip address from the previously executed terraform command to the Ansible Inventory (/etc/ansible/hosts):
+```
+[ec2]
+ec2-user@<host>
+```
+1. Execute the following command from within the cloned project:
+	1. `sudo ansible-playbook playbook-nginx-datadog.yaml`
+2. Enable sending of EC2 and Nginx metrics and log data
+
 ## Challenges
 1. EC2 and Nginx Logs using CloudFormation automated method
 
