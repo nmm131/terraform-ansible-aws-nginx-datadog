@@ -60,9 +60,10 @@
 [ec2]
 ec2-user@<host>
 ```
-1. Execute the following command from within the cloned project:
+2. Edit the `DD_API_KEY` in `playbook-nginx-datadog.yaml` with your own
+2. Execute the following command from within the cloned project:
 	1. `sudo ansible-playbook playbook-nginx-datadog.yaml`
-2. Enable sending of EC2 and Nginx metrics and log data
+3. Enable sending of EC2 and Nginx metrics and log data
 
 ![Screenshot]("./Datadog.gif")
 
