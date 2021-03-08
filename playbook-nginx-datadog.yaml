@@ -1,0 +1,14 @@
+---
+- hosts: ec2 
+  tasks:
+    - name: Install Nginx
+      shell: |
+        sudo yum update -y
+        sudo amazon-linux-extras install nginx1 -y
+    - name: Start Nginx Application
+      shell: |
+        sudo nginx
+    - name: Install Datadog Agent
+      shell: |
+        sudo yum update -y
+        DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=<dd_api_key_here> DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
