@@ -65,7 +65,7 @@ ec2-user@<host>
 	1. `sudo ansible-playbook playbook-nginx-datadog.yaml`
 3. Enable sending of EC2 and Nginx metrics and log data
 
-![Screenshot]("./Datadog.gif")
+![Screenshot]("Datadog.gif")
 
 ## Challenges
 1. EC2 and Nginx Logs using CloudFormation automated method
