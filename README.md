@@ -68,6 +68,7 @@ ec2-user@<host>
 ![Screenshot](Datadog.gif)
 
 ## Challenges
-1. EC2 and Nginx Logs using CloudFormation automated method
+1. Nginx Logs - nginx directory read permissions
+2. System Logs - add logs section in Datadog.yaml
 
 ## Q & A
